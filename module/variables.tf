@@ -21,6 +21,10 @@ variable "image_name" {}
 #variable "docker_dir" {}
 variable "fargate_cpu" {}
 variable "fargate_memory" {}
+variable "sns_email" {}
+variable "log_filter_pattern" {}
+variable "metric_transformation_value" {}
+variable "cwa_actions" {}
 provider "aws" {
   alias  = "us-east-1"
   region = var.regions["virginia"]

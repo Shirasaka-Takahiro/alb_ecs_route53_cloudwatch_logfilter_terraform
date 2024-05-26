@@ -30,4 +30,8 @@ module "prod" {
   image_name         = var.image_name
   fargate_cpu        = var.fargate_cpu
   fargate_memory     = var.fargate_memory
+  sns_email = var.sns_email
+  log_filter_pattern = var.log_filter_pattern
+  metric_transformation_value = var.metric_transformation_value
+  cwa_actions                       = var.cwa_actions
 }

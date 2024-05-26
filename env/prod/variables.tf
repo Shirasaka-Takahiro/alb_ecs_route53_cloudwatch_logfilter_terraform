@@ -154,3 +154,31 @@ variable "fargate_memory" {
   type        = string
   default     = "512"
 }
+
+##SNS E-mail
+variable "sns_email" {
+  description = "email address for sns"
+  type        = string
+  default     = ""
+}
+
+##CloudWatch Log FIlter Pattern
+variable "log_filter_pattern" {
+  description = "log filter pattern"
+  type        = string
+  default     = "ERROR"
+}
+
+##CloudWatch Log FIlter Metric Transformation Value
+variable "metric_transformation_value" {
+  description = "log filter metric transformation value"
+  type        = string
+  default     = "1"
+}
+
+##Cloud Watch Alearm Actions
+variable "cwa_actions" {
+  description = "Cloud watch alearm actions"
+  type        = string
+  default     = "false"
+}
